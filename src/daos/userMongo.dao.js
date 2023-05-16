@@ -23,14 +23,15 @@ export default class UserMongoDao extends DAO {
             throw new CustomError(500, "error deletting user")
         }
     }
-    async getOne(filter){
+    async getByUsername(username){
         try {
-            const user = await this.collection.findOne(filter);
+            const user = await this.collection.findOne({username});
             
             return user
         } catch (err) {
             throw new CustomError(500, "Error getting user");
         }
     }
+
 
 }

@@ -10,10 +10,10 @@ const createProduct = async (createProductRequest) => {
         const { name } = createProductRequest;
         const existingProduct = await DAO.getByName(name);
 
-        
         if (existingProduct) {
             throw new CustomError(500, 'Product already exists');
         }
+
         const createdProduct = await DAO.create(createProductRequest);
 
         return createdProduct;
@@ -29,7 +29,7 @@ const deleteProduct = async (id) => {
         const existingProduct = DAO.getById(id);
 
         if (!existingProduct) {
-            throw new CustomError(500, 'the product dont exist')
+            throw new CustomError(500, 'the product don´t exist')
         }
 
         const deletedProduct = await DAO.delete(id);

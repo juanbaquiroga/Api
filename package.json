@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juanbaquiroga/Api.git"
+    "url": "git+https://github.com/juanbaquiroga/final_backend"
   },
   "author": "Juan Bautista Quiroga",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/juanbaquiroga/Api/issues"
+    "url": "https://github.com/juanbaquiroga/final_backend/issues"
   },
-  "homepage": "https://github.com/juanbaquiroga/Api#readme",
+  "homepage": "https://github.com/juanbaquiroga/final_backend#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "dotenv": "^16.0.3",

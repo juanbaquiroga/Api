@@ -9,22 +9,17 @@ export default class MessagesMongoDao extends DAO {
     }
     
     async create(createMessageRequest) {
-        // try {
-            // console.log(createMessageRequest)
-            // const createdMessage = await this.collection.create(createMessageRequest);
-
-            // return createdMessage;
-        // } catch (err) {
-        //     throw new CustomError(500, "Error creating message");
-        // }
-        console.log(createMessageRequest)
-        const createdMessage = await this.collection.create(createMessageRequest);
-        console.log(createdMessage)
-        return createdMessage;
-    }
-    async getOne(filters){
         try {
-            const message = await this.collection.findOne(filters);
+            const createdMessage = await this.collection.create(createMessageRequest);
+
+            return createdMessage;
+        } catch (err) {
+            throw new CustomError(500, "Error creating message");
+        }
+    }
+    async getById(id){
+        try {
+            const message = await this.collection.findOne({_id:id});
         
             return message;
         } catch (err) {
@@ -49,9 +44,9 @@ export default class MessagesMongoDao extends DAO {
             throw new CustomError(500, "Error getting messages");
         }
     }
-    async getMany(filters) {
+    async getMany(username) {
         try {
-            const messages = await this.collection.find(filters).lean();
+            const messages = await this.collection.find({username}).lean();
 
             return messages
         } catch (err) {

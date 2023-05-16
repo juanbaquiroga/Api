@@ -14,7 +14,6 @@ const sendMessage = (messageInfo) => {
     socket.emit("client:message", messageInfo);
 };
 const renderMessage = (messageData)=>{
-    console.log(messageData)
     const html = messageData.map((messageInfo) => {
         if( messageInfo.admin === true){
             return `<div> <b style="font-size:15px; color:red">[${messageInfo.date}]----  </b><strong style="font-size:15px; color:red">admin: </strong> <em>${messageInfo.message}<em/> </div>`;

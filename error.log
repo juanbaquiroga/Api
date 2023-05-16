@@ -1,233 +1,28 @@
-[2023-05-03T10:40:46.554] [ERROR] default - error al logear usuario
-[2023-05-03T10:41:09.864] [ERROR] default - error al logear usuario
-[2023-05-03T11:56:24.923] [ERROR] default - Error: Invalid login: 535 Authentication failed
+[2023-05-16T17:46:24.421] [ERROR] default - Error: Missing credentials for "PLAIN"
     at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
-    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
-    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection.login (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:444:38)
+    at /Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-transport/index.js:272:32
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:213:17)
+    at Object.onceWrapper (node:events:627:28)
+    at SMTPConnection.emit (node:events:513:28)
+    at SMTPConnection._actionEHLO (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1331:14)
     at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
     at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
-    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
-    at TLSSocket.emit (node:events:513:28)
-    at addChunk (node:internal/streams/readable:315:12)
-    at readableAddChunk (node:internal/streams/readable:289:9)
-    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44) {
   code: 'EAUTH',
-  response: '535 Authentication failed',
-  responseCode: 535,
-  command: 'AUTH PLAIN'
+  command: 'API'
 }
-[2023-05-03T17:11:32.935] [ERROR] default - Error: Invalid login: 535 Authentication failed
+[2023-05-16T17:47:39.151] [ERROR] default - Error: Missing credentials for "PLAIN"
     at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
-    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
-    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection.login (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:444:38)
+    at /Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-transport/index.js:272:32
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:213:17)
+    at Object.onceWrapper (node:events:627:28)
+    at SMTPConnection.emit (node:events:513:28)
+    at SMTPConnection._actionEHLO (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1331:14)
     at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
     at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
-    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
-    at TLSSocket.emit (node:events:513:28)
-    at addChunk (node:internal/streams/readable:315:12)
-    at readableAddChunk (node:internal/streams/readable:289:9)
-    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44) {
   code: 'EAUTH',
-  response: '535 Authentication failed',
-  responseCode: 535,
-  command: 'AUTH PLAIN'
-}
-[2023-05-05T12:53:09.828] [ERROR] default - error al logear usuario
-[2023-05-05T12:55:25.123] [ERROR] default - error al logear usuario
-[2023-05-05T12:55:34.250] [ERROR] default - error al logear usuario
-[2023-05-05T12:57:13.259] [ERROR] default - error al logear usuario
-[2023-05-05T12:57:25.618] [ERROR] default - error al logear usuario
-[2023-05-05T12:58:16.652] [ERROR] default - error al logear usuario
-[2023-05-05T12:58:28.454] [ERROR] default - error al logear usuario
-[2023-05-05T12:59:01.862] [ERROR] default - error al logear usuario
-[2023-05-05T12:59:27.819] [ERROR] default - error al logear usuario
-[2023-05-06T13:43:06.219] [ERROR] default - Error: Invalid login: 535 Authentication failed
-    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
-    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
-    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
-    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
-    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
-    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
-    at TLSSocket.emit (node:events:513:28)
-    at addChunk (node:internal/streams/readable:315:12)
-    at readableAddChunk (node:internal/streams/readable:289:9)
-    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
-  code: 'EAUTH',
-  response: '535 Authentication failed',
-  responseCode: 535,
-  command: 'AUTH PLAIN'
-}
-[2023-05-07T23:03:32.953] [ERROR] default - Error: Invalid login: 535 Authentication failed
-    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
-    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
-    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
-    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
-    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
-    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
-    at TLSSocket.emit (node:events:513:28)
-    at addChunk (node:internal/streams/readable:315:12)
-    at readableAddChunk (node:internal/streams/readable:289:9)
-    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
-  code: 'EAUTH',
-  response: '535 Authentication failed',
-  responseCode: 535,
-  command: 'AUTH PLAIN'
-}
-[2023-05-07T23:04:09.723] [ERROR] default - Error: Invalid login: 535 Authentication failed
-    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
-    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
-    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
-    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
-    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
-    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
-    at TLSSocket.emit (node:events:513:28)
-    at addChunk (node:internal/streams/readable:315:12)
-    at readableAddChunk (node:internal/streams/readable:289:9)
-    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
-  code: 'EAUTH',
-  response: '535 Authentication failed',
-  responseCode: 535,
-  command: 'AUTH PLAIN'
-}
-[2023-05-09T15:08:40.997] [ERROR] default - Error: Invalid login: 535 Authentication failed
-    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
-    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
-    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
-    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
-    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
-    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
-    at TLSSocket.emit (node:events:513:28)
-    at addChunk (node:internal/streams/readable:315:12)
-    at readableAddChunk (node:internal/streams/readable:289:9)
-    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
-  code: 'EAUTH',
-  response: '535 Authentication failed',
-  responseCode: 535,
-  command: 'AUTH PLAIN'
-}
-[2023-05-09T15:09:30.595] [ERROR] default - Error: Invalid login: 535 Authentication failed
-    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
-    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
-    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
-    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
-    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
-    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
-    at TLSSocket.emit (node:events:513:28)
-    at addChunk (node:internal/streams/readable:315:12)
-    at readableAddChunk (node:internal/streams/readable:289:9)
-    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
-  code: 'EAUTH',
-  response: '535 Authentication failed',
-  responseCode: 535,
-  command: 'AUTH PLAIN'
-}
-[2023-05-11T11:01:27.495] [ERROR] default - Error: Invalid login: 535 Authentication failed
-    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
-    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
-    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
-    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
-    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
-    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
-    at TLSSocket.emit (node:events:513:28)
-    at addChunk (node:internal/streams/readable:315:12)
-    at readableAddChunk (node:internal/streams/readable:289:9)
-    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
-  code: 'EAUTH',
-  response: '535 Authentication failed',
-  responseCode: 535,
-  command: 'AUTH PLAIN'
-}
-[2023-05-13T17:55:06.057] [ERROR] default - CustomError { errorCode: 500, message: 'invalid credentials' }
-[2023-05-13T18:00:44.154] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:12:12.692] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:12:27.837] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:12:32.250] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:13:46.658] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:30:40.344] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:33:13.311] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:33:17.062] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:37:32.709] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:37:34.475] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:37:35.442] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:37:35.807] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-13T18:44:50.465] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:24:15.455] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:33:06.503] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:33:29.379] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:33:42.018] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:36:55.538] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:37:48.473] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:39:00.906] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:39:40.587] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:40:16.111] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:40:47.349] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:41:06.823] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:42:07.229] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:42:39.916] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:53:03.995] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:53:06.038] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:53:10.982] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:55:34.856] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:56:44.930] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:57:41.850] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:58:59.101] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:59:01.846] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:59:03.829] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-14T23:59:20.684] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-15T00:06:32.269] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-15T00:07:40.057] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-15T00:08:14.628] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-15T00:09:14.716] [ERROR] default - CustomError { errorCode: 500, message: 'error creating message' }
-[2023-05-15T00:10:06.715] [ERROR] default - Error: messages validation failed: date: Cast to date failed for value "15/05/2023 00:10:06" (type string) at path "date"
-    at ValidationError.inspect (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/error/validation.js:50:26)
-    at formatValue (node:internal/util/inspect:806:19)
-    at inspect (node:internal/util/inspect:365:10)
-    at formatWithOptionsInternal (node:internal/util/inspect:2292:40)
-    at Object.format (node:internal/util/inspect:2149:10)
-    at basicLayout (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/log4js/lib/layouts.js:65:52)
-    at app (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/log4js/lib/appenders/file.js:98:23)
-    at /Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/log4js/lib/appenders/logLevelFilter.js:10:7
-    at /Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/log4js/lib/log4js.js:43:5
-    at Array.forEach (<anonymous>) {
-  errors: {
-    date: CastError: Cast to date failed for value "15/05/2023 00:10:06" (type string) at path "date"
-        at SchemaDate.cast (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/schema/date.js:354:11)
-        at SchemaDate.SchemaType.applySetters (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/schematype.js:1202:12)
-        at model.$set (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/document.js:1388:22)
-        at model.$set (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/document.js:1113:16)
-        at model.Document (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/document.js:163:12)
-        at model.Model (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/model.js:121:12)
-        at new model (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/model.js:4550:15)
-        at /Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/model.js:2830:16
-        at Array.map (<anonymous>)
-        at Function.create (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/model.js:2819:38) {
-      stringValue: '"15/05/2023 00:10:06"',
-      messageFormat: undefined,
-      kind: 'date',
-      value: '15/05/2023 00:10:06',
-      path: 'date',
-      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
-      
-        assert.ok(false)
-      
-          at castDate (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/cast/date.js:40:10)
-          at SchemaDate.cast (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/schema/date.js:352:12)
-          at SchemaDate.SchemaType.applySetters (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/schematype.js:1202:12)
-          at model.$set (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/document.js:1388:22)
-          at model.$set (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/document.js:1113:16)
-          at model.Document (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/document.js:163:12)
-          at model.Model (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/model.js:121:12)
-          at new model (/Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/model.js:4550:15)
-          at /Users/juanbaquiroga/Desktop/backend/proyectoFinal/node_modules/mongoose/lib/model.js:2830:16
-          at Array.map (<anonymous>) {
-        generatedMessage: true,
-        code: 'ERR_ASSERTION',
-        actual: false,
-        expected: true,
-        operator: '=='
-      },
-      valueType: 'string'
-    }
-  },
-  _message: 'messages validation failed'
+  command: 'API'
 }

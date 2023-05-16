@@ -8,13 +8,12 @@ const login = (req, res) => {
 const logout = (req, res) => {
     const user = req.user
     req.logout(() => {
-        console.log("logout complete");
         return res.render('logout', {user: user.username})
     });
 }
 const info = (req, res) =>{
     const user = req.user;
-    console.log(user);
+    
     res.render('login-ok', {
         username: user.username,
         name: user.name,

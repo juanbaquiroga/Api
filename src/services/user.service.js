@@ -10,20 +10,20 @@ const createUser = async (createUserRequest) => {
         const createdUser = await DAO.create(createUserRequest);
         return createdUser;
     } catch (err) {
-        throw new CustomError(500, "The username you provided is not valid");
+        throw new CustomError(500, "error creating user");
     }
 };
 
-const findUserByFilter = async (filter) => {
+const findByUsername = async (username) => {
     try {
-        const user = await DAO.getOne(filter);
+        const user = await DAO.getByUsername(username);
         return user;
     } catch (err) {
-        throw err;
+        throw new CustomError(500, "user not found");
     }
 };
 
 export const userService = {
     createUser,
-    findUserByFilter
+    findByUsername
 };

@@ -1,4 +1,3 @@
-import MemClient from "./MemClient.class.js";
 import MongoClient from "./MongoClient.class.js";
 
 export default class DBClientFactory {
@@ -6,8 +5,6 @@ export default class DBClientFactory {
     switch (db) {
       case "MONGO":
         return new MongoClient();
-      case "MEM":
-        return new MemClient();
     }
   }
 }

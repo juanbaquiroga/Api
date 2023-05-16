@@ -56,7 +56,6 @@ const productForm = (req, res, next)=>{
 const saveProd = (req, res, next)=>{
     try {
     const {name, price, stock, img, category} = req.body;
-    console.log('controller')
     productService.createProduct({ name, price, stock, img, category})
 
     res.redirect('/products')

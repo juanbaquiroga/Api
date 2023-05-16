@@ -19,7 +19,7 @@ const createMessage = async (createMessageRequest) => {
 
 const deleteMessage = async (id) => {
     try {
-        const existingMessage = DAO.getOne({_id: id});
+        const existingMessage = DAO.getById(id);
 
         if (!existingMessage) {
             throw new CustomError(500, 'the message dont exist')
@@ -53,7 +53,7 @@ const findAllMessages = async () => {
 };
 const findMessagesByUsername = async (username) => {
     try {
-        const messages = await DAO.getMany({username:username});
+        const messages = await DAO.getMany(username);
 
         return messages;
     } catch (err) {
@@ -63,7 +63,7 @@ const findMessagesByUsername = async (username) => {
 
 const findMessageById = async (id) => {
     try {
-        const message = await DAO.getOne({_id:id});
+        const message = await DAO.getById(id);
 
         if (!message) {
             throw new CustomError(500, 'the message dont exist')

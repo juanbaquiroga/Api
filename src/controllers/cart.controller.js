@@ -1,16 +1,18 @@
 import { productService, cartService } from '../services/index.js'
 import { createTransport } from "nodemailer";
 import logger from '../libs/logger.lib.js';
+import config from '../config/config.js'
 
 const transporter = createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: 'molly.ebert@ethereal.email',
-        pass: 'R5eUKPutHVvRZ6KBAB'
+        user: config.nodemailerUser,
+        pass: config.nodemailerPassword
     }
 });
   
+
 const addToCart = async (req, res)=>{
     try{
         const productId = req.body.prodId
@@ -52,7 +54,7 @@ const buyCart = async (req, res) =>{
     const cart = await cartService.findCartByFilter(user.username);
     const mailOtions = {
         from: "Servidor Node",
-        to: "molly.ebert@ethereal.email",
+        to: config.nodemailerUser,
         subject: `nuevo pedido de ${user.username}`,
         text:`email: ${user.email} \nusername: ${user.username} \nbuy(\n${cart.products.map((prod)=>{
             return `    - product: ${prod.name}, price per unit: $${prod.price}, quantity: ${prod.qty}\n`
