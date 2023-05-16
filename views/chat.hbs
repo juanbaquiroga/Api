@@ -1,0 +1,27 @@
+<header  style="display: flex; flex-flow:row nowrap; justify-content:space-between; padding: 10px 20px;background-color:rgba(0, 0, 0, 0.30); align-items:center">
+<h3>{{username}}</h3>
+<div>
+<a href="/user/logout" style="background-color:rgb(43, 43, 43); color:rgb(255, 255, 255); border-radius: 20px; padding:5px 15px" class="btn mr-3">Logout</a>
+<a href="/products" style="background-color:rgb(76, 76, 76); color:rgb(255, 255, 255); border-radius: 20px; padding:5px 15px" class="btn mr-3">Home</a>
+<a href="/cart" style="background-color:rgb(76, 76, 76); color:rgb(255, 255, 255); border-radius: 20px; padding:5px 15px" class="btn mr-3">Cart</a>
+<img style="width: 50px; height:50px; border-radius: 50%; object-fit:cover" src="{{userImg}}" alt="">
+</div>
+</header>
+<div style="display:flex; flex-flow:column; align-items:center; background-color:rgba(97, 97, 97, 0.107); width:70%; border-radius:10px; margin:20px auto; padding:15px; min-height: 800px;">
+    <h1>Chat app</h1>
+    <a href="/chat/user" style="background-color:rgb(76, 76, 76); color:rgb(255, 255, 255); border-radius: 20px; padding:5px 15px" class="btn mr-3">see only my message</a>
+    <form id="messageForm" style="margin-top: 1em">
+        <input type="hidden" value={{userEmail}} id="emailInput"/>
+        <input type="hidden" value={{username}} id="usernameInput">
+        <input type="hidden" id="adminInput" value={{userAdmin}} >
+        <input type="text" id="messageInput" placeholder="Menssaje" />
+        <input type="submit" value="Send" />
+    </form>
+    <div id="messagesPool" style="display:flex ; flex-direction: column;">
+    
+    </div>
+    
+</div>
+
+<script src="socket.io/socket.io.js"></script>
+<script src="/client.socket.js"></script>
