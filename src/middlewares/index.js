@@ -14,6 +14,20 @@ const isLoged = (req, res, next)=>{
         next()
     }
 }
+const isAdmin = (req, res, next)=>{
+    const bloquedUrls = ['/products/add']
+    const bloqued = bloquedUrls.some((url) => url === req.path)
+    if (bloqued){
+        if(req.user.admin){
+            next()
+        }else{
+            res.render('route-denied')
+        }
+    }else{
+        next()
+    }
+}
+
 
 const invalidUrl = (req, res, next) => {
     logger.warn({
@@ -24,4 +38,4 @@ const invalidUrl = (req, res, next) => {
 };
 
 
-export const middlewares = {isLoged, invalidUrl}
+export const middlewares = {isLoged, invalidUrl, isAdmin}

@@ -3,13 +3,13 @@ import { createTransport } from "nodemailer";
 import logger from '../libs/logger.lib.js';
 
 const transporter = createTransport({
-    host: "smtp.ethereal.email",
+    host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-      user: "sylvester37@ethereal.email",
-      pass: "z4jDd5658uZt3Wj7eN",
-    },
-  });
+        user: 'molly.ebert@ethereal.email',
+        pass: 'R5eUKPutHVvRZ6KBAB'
+    }
+});
   
 const addToCart = async (req, res)=>{
     try{
@@ -52,10 +52,10 @@ const buyCart = async (req, res) =>{
     const cart = await cartService.findCartByFilter(user.username);
     const mailOtions = {
         from: "Servidor Node",
-        to: "sigrid.stokes13@ethereal.email",
+        to: "molly.ebert@ethereal.email",
         subject: `nuevo pedido de ${user.username}`,
-        text:`email:${user.email} \nusername:${user.username} \nbuy(\n${cart.products.map((prod)=>{
-            return `    - product: ${prod.name}, price:${prod.price}\n`
+        text:`email: ${user.email} \nusername: ${user.username} \nbuy(\n${cart.products.map((prod)=>{
+            return `    - product: ${prod.name}, price per unit: $${prod.price}, quantity: ${prod.qty}\n`
         })})`
     };
     

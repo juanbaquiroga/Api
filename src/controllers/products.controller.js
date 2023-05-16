@@ -11,8 +11,7 @@ const getIndex = async (req, res, next)=>{
               categories.push(category);
             }
         })
-        console.log(categories)
-        res.render('home', {products, categories, username: user.username, userImg:user.img})
+        res.render('home', {products, categories, username: user.username, userImg:user.img, admin: user.admin})
     } catch (err) {
         next(err);
     }
@@ -56,9 +55,9 @@ const productForm = (req, res, next)=>{
 }
 const saveProd = (req, res, next)=>{
     try {
-    const {name, price, stock, img} = req.body;
+    const {name, price, stock, img, category} = req.body;
     console.log('controller')
-    productService.createProduct({ name, price, stock, img})
+    productService.createProduct({ name, price, stock, img, category})
 
     res.redirect('/products')
     } catch (err) {

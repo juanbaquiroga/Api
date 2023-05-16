@@ -7,17 +7,14 @@ const DAO = ProductDaoFactory.getClient(config.database);
 
 const createProduct = async (createProductRequest) => {
     try {
-        console.log('service')
         const { name } = createProductRequest;
         const existingProduct = await DAO.getByName(name);
-        console.log('service2')
+
         
         if (existingProduct) {
             throw new CustomError(500, 'Product already exists');
         }
-        console.log('service3')
         const createdProduct = await DAO.create(createProductRequest);
-        console.log('service4')
 
         return createdProduct;
     } catch (err) {

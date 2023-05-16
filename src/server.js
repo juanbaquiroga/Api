@@ -52,6 +52,7 @@ if(cluster.isPrimary && config.mode.toUpperCase() === 'CLUSTER'){
     });
     
     app.use(middlewares.isLoged)
+    app.use(middlewares.isAdmin)
     app.use('/', router)
     app.use(middlewares.invalidUrl)
 
