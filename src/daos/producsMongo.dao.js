@@ -1,7 +1,6 @@
 import CustomError from "../classes/CustomError.class.js";
 import DAO from "../classes/DAO.class.js";
 import { Product } from "../models/index.js";
-import logger from "../../../desafios/proyectoFinal/src/libs/logger.lib.js";
 
 export default class ProductsMongoDao extends DAO {
   constructor() {
@@ -12,7 +11,6 @@ export default class ProductsMongoDao extends DAO {
     async create(createProductRequest) {
         try {
             const createdProduct = await this.collection.create(createProductRequest);
-            logger.info(`new product created: ${createdProduct}`)
             return createdProduct;
         } catch (err) {
             throw new CustomError(500, "Error creating product");
