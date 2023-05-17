@@ -26,11 +26,13 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 
 ## Base de datos
 
-La aplicación utiliza MongoDB como base de datos. Asegúrate de proporcionar la URL de tu base de datos en el archivo `.env`. La aplicación creará automáticamente las colecciones necesarias.
+La aplicación utiliza MongoDB como base de datos. Asegúrate de proporcionar la URL de tu base de datos en el archivo `.env`.
+La aplicación creará automáticamente las colecciones necesarias.
+una vez creada la base podremos modificar el parametro admin del usuario, esto nos permitira acceder a las fuciones de administrador, como crear productos o enviar mensajes como administrador
 
 ## Demostración
 
-Puedes acceder a una demostración del proyecto en la siguiente URL: [https://finalbackend-production-398c.up.railway.app](https://finalbackend-production-398c.up.railway.app)
+Puedes acceder a una demostración del proyecto en la siguiente URL: [https://finalbackend-production-398c.up.railway.app](https://finalbackend-production-398c.up.railway.app) podemos logearnoos con el usuario: admin, password: admin
 
 ## Uso
 
